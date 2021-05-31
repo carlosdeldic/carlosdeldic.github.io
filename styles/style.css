@@ -164,42 +164,35 @@ h1, h2, h3, h4{
 }
 
 .intro {
-    padding: 30px; 
+    padding: 30px;
+    padding-right: 0;
     display: flex;
     flex-wrap: wrap; 
     margin-left: 200px;
 }
 
+.vintro{
+    
+}
+
 #myvideo {
+    position: relative;
     margin-left: 200px;
     width: 1000px;
     padding-bottom: 30px;
     padding-top: 30px;
-
 }
 
-/* Style the video: 100% width and height to cover the entire window */
-/*
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-*/
 
 
-/*
-#bottomimg{
-    box-shadow: 5px 5px 15px 5px;
-    width: 100%;
+.contacte {
     margin-left: 200px;
-    
+    padding: 50px;
+    background-color: black;
 }
-*/
 
-#sobremi{
+
+#hola{
     font-size: 60px;
     padding: 30px;
     margin: auto;
@@ -224,13 +217,166 @@ h1, h2, h3, h4{
     max-width: 350px;
 }
 
-#feines{
-    padding: 30px;
+.feinesmargin{
+    margin-left: 200px;
 }
 
 .feines{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.feina{
+    flex: 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgfeina{
+    transition-duration:1s;
+    width:95%;
+    height:95%;
+    opacity: .6;
+}
+
+.imgfeina:hover{
+    width:100%;
+    height:100%;
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+    color:tan;
+}
+
+
+/*---------SLIDER----------*/
+
+    .clearfix {
+        overflow: auto;
+    }
+    .container-display {
+        position: relative;
+        /*indicador*/
+        
+        margin-left: 200px;
+    }
+    .boton-slider {
+        border-radius: 100%;
+        border: 0px;
+        background-color: grey;
+        width:42px;
+        height:42px;
+        color:white;
+        margin:12px;
+        font-size:18px;
+        opacity: 0.5;
+    }
+    .boton-slider:hover {
+        width: 35px;
+        height: 35px;
+        background-color: darkgray;
+    }
+    .fletxaDreta-slider {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        */
+    }
+    .fletxaEsquerra-slider {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(0%, -50%);
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+
+/*---------MEDIAQUERIES----------*/
+
+@media only screen and (max-width: 600px) {
+     body {
+         background-color: lightblue;
+     }
+     .columna {
+         column-count: 1;
+        }
+
+    .icones{
+        padding-top: 200px;
+    }
+
+    .wrapper .sidebar{
+      display: none;
+    }
+    
+    .container-display
+    {
+        margin-left: 0px;
+    }
+    
+    .intro
+    {
+        margin-left: 0px;
+    }
+    #titol
+    {
+        margin-left: 0px;
+    }
+    #titol2
+    {
+        margin-left: 0px;
+    }
+    #myvideo
+    {
+        margin-left: 40px;
+    }
+    
+    .feinesmargin
+    {
+        margin-left: 0px;
+    }
+    .contacte
+    {
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+/*
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+*/
+
+
+/*
+#bottomimg{
+    box-shadow: 5px 5px 15px 5px;
+    width: 100%;
+    margin-left: 200px;
     
 }
+*/
+
+
 
 /*
 #menu {
@@ -425,95 +571,6 @@ color: white;
     justify-content: space-around;
     align-items: flex-end;    
 }
-
-/*---------SLIDER----------*/
-
-    .clearfix {
-        overflow: auto;
-    }
-    .container-display {
-        position: relative;
-        /*indicador*/
-        
-        margin-left: 200px;
-    }
-    .boton-slider {
-        border-radius: 100%;
-        border: 0px;
-        background-color: grey;
-        width:42px;
-        height:42px;
-        color:white;
-        margin:12px;
-        font-size:18px;
-        opacity: 0.5;
-    }
-    .boton-slider:hover {
-        width: 35px;
-        height: 35px;
-        background-color: darkgray;
-    }
-    .fletxaDreta-slider {
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        transform: translate(0%, -50%);
-        */
-    }
-    .fletxaEsquerra-slider {
-        position: absolute;
-        top: 50%;
-        right: 0%;
-        transform: translate(0%, -50%);
-    }
-
-    .mySlides {
-        display: none;
-    }
-
-
-/*---------MEDIAQUERIES----------*/
-
-@media only screen and (max-width: 600px) {
-     body {
-         background-color: lightblue;
-     }
-     .columna {
-         column-count: 1;
-        }
-
-    .icones{
-        padding-top: 200px;
-    }
-
-    .wrapper .sidebar{
-      display: none;
-    }
-    
-    .container-display
-    {
-        margin-left: 0px;
-    }
-    
-    .intro
-    {
-        margin-left: 0px;
-    }
-    #titol
-    {
-        margin-left: 0px;
-    }
-    #titol2
-    {
-        margin-left: 0px;
-    }
-        #myVideo
-    {
-        margin-left: 0px;
-    }
-}
-
-
 
 
 

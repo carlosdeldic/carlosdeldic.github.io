@@ -13,49 +13,33 @@
 <body>
 
     <div id="container">
-     
-     
-     
-     
-       
-  
-  
-  
-  
-  
-  
-   <div class="wrapper">
-    <div class="sidebar">
-        <img src="icons/firma.svg">
-        <ul>
-            <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
-            <li><a href="#sobremi"><i class="fas fa-user"></i>Sobre mi</a></li>
-            <li><a href="#"><i class="fas fa-address-card"></i>Trabajos</a></li>
-            <li><a href="#"><i class="fas fa-address-book"></i>Contacto</a></li>
-        </ul> 
-        <div class="social_media icones">
-         <a href="mailto:carlosdeldic@gmail.com?Subject=Hi%20mate" target="_top"><img class="icon" id="mail" src="icons/mail.svg" width="33px" ></a>
-         
-         <a href="https://www.behance.net/carlosdelgado23"><img class="icon" src="icons/behance.svg" width="30px"></a>
-         
-         <a href="https://www.linkedin.com/in/carlos-delgado-dicenta-058534206/"><img class="icon" src="icons/linkedin.svg" width="30px"></a>
-      </div>
+
+<!--SIDEBAR-->
+      
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="icons/firma.svg">
+            <ul>
+                <li><a href="#inici"><i class="fas fa-home"></i>Inicio</a></li>
+                <li><a href="#sobremi"><i class="fas fa-user"></i>Sobre mi</a></li>
+                <li><a href="#feines"><i class="fas fa-address-card"></i>Trabajos</a></li>
+                <li><a href="#contacte"><i class="fas fa-address-book"></i>Contacto</a></li>
+            </ul> 
+            
+      <!--SOCIAL LINKS-->
+            <div class="social_media icones">
+             <a href="mailto:carlosdeldic@gmail.com?Subject=Hi%20mate" target="_top"><img class="icon" id="mail" src="icons/mail.svg" width="33px" ></a>
+
+             <a href="https://www.behance.net/carlosdelgado23"><img class="icon" src="icons/behance.svg" width="30px"></a>
+
+             <a href="https://www.linkedin.com/in/carlos-delgado-dicenta-058534206/"><img class="icon" src="icons/linkedin.svg" width="30px"></a>
+          </div>
+        </div>
     </div>
-</div>
    
-   
-   
-   
-   
-   
-   
-   
-     
-     
-     
-     
      <header>
-<!--SOCIAL LINKS-->
+     
+<!--SOCIAL LINKS OLD-->
  <!--            <div class="icones">
                     <a href="mailto:carlosdeldic@gmail.com?Subject=Hi%20mate" target="_top"><img class="icon" src="icons/mail.svg" width="40px" ></a>
                     <a href="https://www.behance.net/carlosdelgado23"><img class="icon" src="icons/behance.svg" width="30px"></a>
@@ -64,12 +48,12 @@
 -->
        
 <!--TITOL-->
-        <div class="inici">
-            <div id="titol">
-                <h1>CARLOS DELGADO</h1>
-                <h3 id="titol2">Modelador & Animador 3D</h3>
+            <div id="inici">
+                <div id="titol">
+                    <h1>CARLOS DELGADO</h1>
+                    <h3 id="titol2">Modelador & Animador 3D</h3>
+                </div>
             </div>
-        </div>
                     
     </header>
         
@@ -84,18 +68,21 @@
 -->  
   
        
-<!--SOBRE MI-->
-       
-        <video autoplay loop id="myvideo">
-          <source src="videos/boles_playblast.webm" type="video/webm" >
+<!--VIDEO INICI-->
+       <div class="vintro">
+        <video autoplay loop id="myvideo" style="width:83.3%">
+          <source src="videos/videointro.webm" type="video/webm" >
+          <source src="videos/videointro.mp4"  type="video/mp4">
+          <source src="videos/videointro.ogv"  type="video/ogv">
         </video>
-
+    </div>
         
         
-        <div class="intro">
         
-<!--SOBRE MI-->           
-                <h2 id="sobremi">Hola!</h2>
+        
+<!--SOBRE MI-->  
+        <div class="intro" id="sobremi">         
+                <h2 id="hola">Hola!</h2>
                 <div class="sobremi">
                 <p>Creativo, organizado y hábil, con conocimientos de diseño gráfico y de programas de edición de imagen y vídeo, y actualmente formándome en el ámbito de la animación y los videojuegos en la Universidad de Vic.  Apasionado del mundo de la automoción y deportes de riesgo. </p>
                 </div> 
@@ -106,13 +93,38 @@
             
         </div>
         
+        
+<!--FEINES-->
+           
+            <div class="feinesmargin">
+
+
+                <h2 ></h2>
+                <div class="feines" id="feines">
+                    <div class="feina">
+                        <img class="imgfeina" src="images/squirrel.png" >
+                    </div>
+                    <div class="feina">
+                        <img class="imgfeina" src="images/Ball.png" >
+                    </div>
+                    <div class="feina">
+                        <img class="imgfeina" src="images/jony.png" >
+                    </div>
+                    <div class="feina">
+                        <img class="imgfeina" src="images/ak47.png" >
+                    </div>
+                </div>
+
+            </div>
+            
 <!--SLIDER-->
+       
         <div class="sliderr" id="sliderr">
             <div class="container-display">
-                <img class="mySlides" src="imgslider/Sqrrl.png" style="width:100%">
-                <img class="mySlides" src="imgslider/Ball.png" style="width:100%">
-                <img class="mySlides" src="imgslider/Jhonny.png" style="width:100%">
-                <img class="mySlides" src="imgslider/AK47_perf.png" style="width:100%">
+                <img class="mySlides" src="imgslider/sqrrl.png" style="width:100%">
+                <img class="mySlides" src="imgslider/ball.png" style="width:100%">
+                <img class="mySlides" src="imgslider/jony.png" style="width:100%">
+                <img class="mySlides" src="imgslider/ak47.png" style="width:100%">
                 <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
             </div>
@@ -139,18 +151,21 @@
                 }
             </script>
                             
-            <div>
 
-
-                <h2 id="feines"></h2>
-                <div class="feines">
-                    <div class="feina1"></div>
-                    <div class="feina2"></div>
-                </div>
-
-            </div>
         
         </div> 
+          
+            
+<!--CONTACTE-->  
+                    
+            <div id="contacte" class="contacte">
+               
+               <a href="files/cv.pdf">Descarga mi Curriculum aquí.</a>
+               <p>+34673499277</p>
+               <p>carlosdeldic@gmail.com</p>
+                
+            </div>
+            
 
     </div>
   <!--
